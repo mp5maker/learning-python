@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+<head>
+    <meta charset='utf-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title ng-bind='title'>Coach Kelly's Data</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='shortcut icon' href='favicon.ico' />
+    <link rel='stylesheet' type='text/css' media='screen' href='node_modules/bootstrap/dist/css/bootstrap.min.css' />
+    <link rel='stylesheet' type='text/css' media='screen' href='node_modules/font-awesome/css/font-awesome.min.css' />
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css' />
+    <script src='node_modules/jquery/jquery.min.js'></script>
+    <script src='node_modules/popper/dist/umd/popper.min.js'></script>
+    <script src='node_modules/bootstrap/dist/js/bootstrap.min.js'></script>
+    <script src='node_modules/angular/angular.min.js'></script>
+    <script src='js/main.js'></script>
+</head>
+<body>
+    <div class = 'container'>
+        <div class = 'row'>
+            <div class = 'col mt-5'>
+                <div class = 'text-center border mt-5 p-5'>
+                    <h4 class = 'lead'>Manage your data</h4>
+                    <form name = 'process_form' ng-submit = 'processFormSubmit()'>
+                        <div class = 'input-group'>
+                            <div class = 'input-group-prepend'>
+                                <span class = 'input-group-text'>
+                                    <i class = 'fa fa-money'></i>
+                                </span>
+                            </div>
+                            <input type = 'text' class = 'form-control' ng-model = 'timevalue' name = 'timevalue' ng-pattern = '/^[0-9\.]+$/' ng-required = 'true' placeholder = 'Please enter your value'/>
+                            <div class = 'input-group-prepend'>
+                                <span class = 'input-group-text'>
+                                    <span class = 'text-danger m-1'  ng-show = 'process_form.timevalue.$touched && process_form.timevalue.$invalid'>
+                                        <i class = 'fa fa-remove'></i>
+                                    </span> 
+                                    <span class = 'text-success m-1' ng-show = 'process_form.timevalue.$valid'>
+                                        <i class = 'fa fa-check'></i>
+                                    </span> 
+                                </span>
+                            </div>
+                        </div>
+                        <span class = 'text-danger m-1'  ng-show = 'process_form.timevalue.$touched && process_form.timevalue.$invalid'>
+                            Please enter numeral values!
+                        </span> 
+                        <input type = 'submit' class = 'form-control btn btn-success mt-3' value = 'Send'/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = 'footer' style = 'margin-top:600px;'>
+        <div class = 'text-center text-police'>
+            <strong>2018 &copy; Photon Enterprise</strong>
+        </div>
+    </div>
+</body>
+</html>

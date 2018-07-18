@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+<head>
+    <meta charset='utf-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title ng-bind='title'>Coach Kelly's Data</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='shortcut icon' href='favicon.ico' />
+    <link rel='stylesheet' type='text/css' media='screen' href='node_modules/bootstrap/dist/css/bootstrap.min.css' />
+    <link rel='stylesheet' type='text/css' media='screen' href='node_modules/font-awesome/css/font-awesome.min.css' />
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css' />
+    <script src='node_modules/jquery/jquery.min.js'></script>
+    <script src='node_modules/popper/dist/umd/popper.min.js'></script>
+    <script src='node_modules/bootstrap/dist/js/bootstrap.min.js'></script>
+    <script src='node_modules/angular/angular.min.js'></script>
+    <script src='js/main.js'></script>
+    <!-- <script src='node_modules/angular-route/angular-route.min.js'></script> -->
+</head>
+<body>
+    <div class = 'container-fluid'>
+        <div class = 'row m-5'>
+            <div class = 'col border pt-5'>
+                <div class = 'text-center'>
+                    <p class = 'lead p-3'>
+                        <strong class = 'box-shadow-1 text-shadow-3 p-2 bg-toolbox text-mud'>
+                            Welcome to Coach Kelly's Website
+                        </strong>
+                    </p>
+                </div>
+                <div class = 'text-center'>
+                    <img class = 'img-fluid border rounded-circle box-shadow-1' src = 'images/coach-head.jpg'/>
+                </div>
+                <div class = 'text-center mt-3'>
+                    <p class = 'm-0'>
+                        For now, all that you'll find here is my athlete's 
+                        <a id = 'click_show_athlete' href = '#show_athlete'>timing data</a>. 
+                        <p class = 'text-center m-0'>
+                             Enjoy!
+                        </p>
+                    </p>
+                    <p>
+                        <code>
+                            See you on the track!
+                        </code>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <show-athlete id = 'show_athlete'></show-athlete>
+    <view-athlete id = 'view_athlete'></view-athlete>
+    <div class = 'footer' style = 'margin-top:350px;'>
+        <div class = 'text-center text-police'>
+            <strong>2018 &copy; Photon Enterprise</strong>
+        </div>
+    </div>
+</body>
+</html>

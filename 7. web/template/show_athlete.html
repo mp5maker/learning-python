@@ -1,0 +1,20 @@
+<div class = 'container'>
+    <div class = 'row'>
+        <div class = 'col mt-5'>
+            <h4 class = 'text-center text-maroon-lg'> List of all the athletes</h4>
+            <form name = 'athlete_form' ng-submit = 'athleteSubmit()' class = 'text-center mt-5 p-5 border box-shadow-1 rounded-circle'>
+                <h5 class = 'text-center'>
+                    <i class = 'fa fa-users text-purple-md'></i>
+                    <p class = 'text-police'>Select an athlete from the list to work with</p>
+                </h5>
+                <div class = 'form-check' ng-repeat = 'a in athletes'>
+                    <label class = 'form-check-label'>
+                        <input type = 'radio' name = 'athlete' ng-model = 'athlete' class = 'form-check-input' value = '{{a.dob}}'/>
+                        <span class = 'text-indigo-lg'>{{a.name}}</span>
+                    </label>
+                </div>
+                <input type = 'submit' class = 'btn btn-success mt-2 box-shadow-1' value = 'Send'/>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,250 @@
+html body {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.box-shadow-1 {
+  box-shadow: 0px 1px 1px 0px grey;
+}
+.box-shadow-1:hover {
+  box-shadow: 0px 2px 2px 0.5px grey;
+}
+
+.box-shadow-2 {
+  box-shadow: 0px 2px 2px 0px grey;
+}
+.box-shadow-2:hover {
+  box-shadow: 0px 4px 4px 1px grey;
+}
+
+.box-shadow-3 {
+  box-shadow: 0px 3px 3px 0px grey;
+}
+.box-shadow-3:hover {
+  box-shadow: 0px 6px 6px 1.5px grey;
+}
+
+.text-shadow-1 {
+  text-shadow: 3px 3px 5px grey;
+}
+.text-shadow-1:hover {
+  text-shadow: 0px 0px 0px grey;
+}
+
+.text-shadow-2 {
+  text-shadow: 6px 6px 10px grey;
+}
+.text-shadow-2:hover {
+  text-shadow: 0px 0px 0px grey;
+}
+
+.text-shadow-3 {
+  text-shadow: 9px 9px 15px grey;
+}
+.text-shadow-3:hover {
+  text-shadow: 0px 0px 0px grey;
+}
+
+.text-blue-lg {
+  color: #000033;
+}
+
+.bg-blue-lg {
+  background-color: #000033;
+}
+
+.text-green-lg {
+  color: #003333;
+}
+
+.bg-green-lg {
+  background-color: #003333;
+}
+
+.text-green-field {
+  color: #006666;
+}
+
+.bg-green-field {
+  background-color: #006666;
+}
+
+.text-blue-sky {
+  color: #006699;
+}
+
+.bg-blue-sky {
+  background-color: #006699;
+}
+
+.text-bluish-green {
+  color: #009999;
+}
+
+.bg-bluish-green {
+  background-color: #009999;
+}
+
+.text-blue-sm {
+  color: #00ccff;
+}
+
+.bg-blue-sm {
+  background-color: #00ccff;
+}
+
+.text-highlighter {
+  color: #00ffcc;
+}
+
+.bg-highlighter {
+  background-color: #00ffcc;
+}
+
+.text-maroon-lg {
+  color: #330000;
+}
+
+.bg-maroon-lg {
+  background-color: #330000;
+}
+
+.text-violet-lg {
+  color: #330033;
+}
+
+.bg-violet-lg {
+  background-color: #330033;
+}
+
+.text-indigo-lg {
+  color: #330066;
+}
+
+.bg-indigo-lg {
+  background-color: #330066;
+}
+
+.text-mud {
+  color: #333300;
+}
+
+.bg-mud {
+  background-color: #333300;
+}
+
+.text-police {
+  color: #333366;
+}
+
+.bg-police {
+  background-color: #333366;
+}
+
+.text-grey-lg {
+  color: #333333;
+}
+
+.bg-grey-lg {
+  background-color: #333333;
+}
+
+.text-maroon-md {
+  color: #660033;
+}
+
+.bg-maroon-md {
+  background-color: #660033;
+}
+
+.text-purple-md {
+  color: #660066;
+}
+
+.bg-purple-md {
+  background-color: #660066;
+}
+
+.text-purple-sm {
+  color: #663366;
+}
+
+.bg-purple-sm {
+  background-color: #663366;
+}
+
+.text-violet-sm {
+  color: #663399;
+}
+
+.bg-violet-sm {
+  background-color: #663399;
+}
+
+.text-violet-md {
+  color: #660099;
+}
+
+.bg-violet-md {
+  background-color: #660099;
+}
+
+.text-grey-sm {
+  color: #666666;
+}
+
+.bg-grey-sm {
+  background-color: #666666;
+}
+
+.text-orange-md {
+  color: #cc9933;
+}
+
+.bg-orange-md {
+  background-color: #cc9933;
+}
+
+.text-orange-lg {
+  color: #cc6633;
+}
+
+.bg-orange-lg {
+  background-color: #cc6633;
+}
+
+.text-pink-md {
+  color: #cc6699;
+}
+
+.bg-pink-md {
+  background-color: #cc6699;
+}
+
+.text-pink-sm {
+  color: #cc99cc;
+}
+
+.bg-pink-sm {
+  background-color: #cc99cc;
+}
+
+.text-toolbox {
+  color: #cccccc;
+}
+
+.bg-toolbox {
+  background-color: #cccccc;
+}
+
+.text-makeup {
+  color: #ff9999;
+}
+
+.bg-makeup {
+  background-color: #ff9999;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,62 @@
+html{
+    body{
+        padding: 0px;
+        margin: 0px;
+        height: 100%;
+        overflow-x: hidden;
+    }
+}
+
+@mixin create-box-shadow($h-offset, $v-offset, $wide, $spread, $color){
+    box-shadow: #{$h-offset}px #{$v-offset}px #{$wide}px #{$spread}px $color;
+}
+
+@for $i from 1 through 3{
+    .box-shadow-#{$i}{
+        @include create-box-shadow(0, $i , $i, 0, grey);
+        &:hover{
+            @include create-box-shadow(0, $i*2 , $i*2, $i/2, grey);
+        }
+    }
+}
+
+@mixin create-text-shadow($h-offset, $v-offset, $blur-radius, $color){
+    text-shadow: #{$h-offset}px #{$v-offset}px #{$blur-radius}px $color 
+}
+
+@for $i from 1 through 3{
+    .text-shadow-#{$i}{
+        @include create-text-shadow($i*3, $i*3, $i*5, grey);
+        &:hover{
+            @include create-text-shadow(0, 0, 0, grey);
+        }
+    }
+}
+
+$more-colors:(
+    blue-lg: #000033, green-lg:  #003333,  green-field: #006666,
+    blue-sky:  #006699, bluish-green: #009999, blue-sm:  #00ccff,
+    highlighter: #00ffcc, maroon-lg:  #330000, violet-lg: #330033,
+    indigo-lg:  #330066, mud: #333300, police: #333366, grey-lg:  #333333,
+    maroon-md:  #660033, purple-md:  #660066, purple-sm:  #663366,
+    violet-sm: #663399, violet-md:  #660099, grey-sm:  #666666,
+    orange-md: #cc9933, orange-lg: #cc6633, pink-md:  #cc6699,
+    pink-sm:  #cc99cc, toolbox: #cccccc, makeup:  #ff9999
+);
+
+@mixin create-text-color($color){
+    color: $color;
+}
+
+@mixin create-bg-color($color){
+    background-color: $color;
+}
+
+@each $key, $value in $more-colors{
+    .text-#{$key}{
+        @include create-text-color($value);
+    }
+    .bg-#{$key}{
+        @include create-bg-color($value);
+    }
+}
