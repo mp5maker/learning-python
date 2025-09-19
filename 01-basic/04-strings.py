@@ -102,4 +102,12 @@ print(word[:]) # whole string
 print(word[::2]) # every second character
 print(word[1:4:2]) # from index 1 to 4 (4 not included), every second character
 print(word[::-1]) # reverse string
+print(word[::-2]) # reverse string, every second character
 print(len(word))
+
+print("immutability-------")
+print("Strings are immutable in Python.")
+selfish = "selfish"
+# selfish[0] = "S" # This will raise an error
+selfish = "S" + selfish[1:] # This is how you can change a string
+print(selfish)
